@@ -27,7 +27,6 @@ class CarreiraPage extends Component {
 						<div className="grid-x grid-padding-x career-bullets">
 							<div className="small-12 medium-4 cell">
 								<h5>Time de Alta Performance</h5>
-								<div></div>
 								<p>Trabalhamos com tecnologia de Ponta, incluindo Big Data, Analytics, Inteligência Artificial, Desenvolvimento Móvel e Web.</p>
 							</div>
 							<div className="small-12 medium-4 cell">
