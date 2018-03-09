@@ -14,7 +14,7 @@ const ContatoPage = () => (
 			<div className="grid-container">
 				<div className="grid-x grid-margin-x">
 					<div className="large-8 cell">
-						<form className="contact-form" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+						<form className="contact-form" name="contact" method="post" data-netlify="true" action="/success" data-netlify-honeypot="bot-field">
   							<input type="hidden" name="form-name" value="contact" />
 							<div className="grid-x grid-margin-x">
 								<div className="medium-6 cell">
