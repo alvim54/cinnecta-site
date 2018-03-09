@@ -30,7 +30,7 @@ const IndexPage = () => (
       <div className="grid-x grid-margin-x">
         <div className="large-12 text-center cell">
           <div className="main-banner">
-            <h1>Conheça seus clientes.<br />Fidelize sua marca. Teste</h1>
+            <h1>Conheça seus clientes.<br />Fidelize sua marca.</h1>
             <p>Entenda o comportamento do seu cliente e gere comunicação assertiva e eficaz com cada um.</p>
             <Link to="/solucoes/" className="secondary button">Conheça nossas soluções</Link>
           </div>
