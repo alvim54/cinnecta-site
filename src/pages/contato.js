@@ -48,19 +48,19 @@ function encode(data) {
 									<input type="hidden" name="form-name" value="contact" />
 									<div className="grid-x grid-margin-x">
 										<div className="medium-6 cell">
-											<input type="text" name="nome" placeholder="Nome:" />
+											<input type="text" name="nome" placeholder="Nome:" onChange={this.handleChange} />
 										</div>
 										<div className="medium-6 cell">
-											<input type="text" name="empresa" placeholder="Empresa:" />
+											<input type="text" name="empresa" placeholder="Empresa:" onChange={this.handleChange} />
 										</div>
 										<div className="medium-6 cell">
-											<input type="text" name="email" placeholder="E-mail:" />
+											<input type="text" name="email" placeholder="E-mail:" onChange={this.handleChange} />
 										</div>
 										<div className="medium-6 cell">
-											<input type="text" name="telefone" placeholder="Telefone:" />
+											<input type="text" name="telefone" placeholder="Telefone:" onChange={this.handleChange} />
 										</div>
 										<div className="medium-12 cell">
-											<textarea type="text" name="mensagem" placeholder="Mensagem:" />
+											<textarea type="text" name="mensagem" placeholder="Mensagem:" onChange={this.handleChange} />
 										</div>
 										<div className="medium-12 text-right cell">
 											<button type="submit" className="secondary large button">Enviar</button>
