@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 
-const sendform = ({ name, company, email, phone, message }) => {
-	
-}
-
 function encode(data) {
 	return Object.keys(data)
 		.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
 		.join("&");
 }
 
-  
   class ContatoPage extends Component{
 	  constructor(props) {
 		super(props);
@@ -22,7 +17,6 @@ function encode(data) {
 	  }
 	
 	  handleSubmit = e => {
-		console.log(this.state);
 		fetch("/", {
 		  method: "POST",
 		  headers: { "Content-Type": "application/x-www-form-urlencoded" },

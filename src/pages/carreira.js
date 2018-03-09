@@ -15,6 +15,8 @@ class CarreiraPage extends Component {
 		}
 	}
 
+	
+
 	render() {
 		return (
 			<div className="main">
@@ -39,36 +41,37 @@ class CarreiraPage extends Component {
 							</div>
 						</div>
 						<h6>Envie seu currículo para <a className="default" href="mailto:jobs@cinnecta.com">jobs@cinnecta.com</a> ou preencha o formulário abaixo:</h6>
-						<form className="contact-form">
+						<form className="contact-form" name="carreira" method="post" data-netlify="true" action="/success" data-netlify-honeypot="bot-field">
+							<input type="hidden" name="bot-field" />
 							<div className="grid-x grid-margin-x">
 								<div className="large-8 cell">
 									<div className="grid-x grid-margin-x">
 										<div className="medium-6 cell">
-											<input type="text" placeholder="Nome:" />
+											<input type="text" name="nome" placeholder="Nome:" />
 										</div>
 										<div className="medium-6 cell">
-											<input type="text" placeholder="E-mail:" />
+											<input type="text" name="email" placeholder="E-mail:" />
 										</div>
 										<div className="medium-12 cell">
-											<input type="text" placeholder="LinkedIn:" />
+											<input type="text" name="linkedin" placeholder="LinkedIn:" />
 										</div>
 										<div className="medium-12 cell">
-											<textarea type="text" placeholder="Mensagem:" />
+											<textarea type="text" name="mensagem" placeholder="Mensagem:" />
 										</div>
 									</div>
 								</div>
 								<div className="large-4 contact-info cell">
-									<select>
+									<select name="atuacao">
 										<option disabled="disabled" selected="selected">Área de atuação</option>
 										<option>Atendimento ao cliente</option>
 										<option>Desenvolvimento (front-end)</option>
 										<option>Desenvolvimento (back-end)</option>
 										<option>Desenvolvimento (mobile)</option>
 									</select>
-									<input type="tel" placeholder="Telefone:" />
+									<input type="tel" name="telefone" placeholder="Telefone:" />
 									<label className="file button">
 										<i className="icon-paperclip"></i> { this.state.uploadFileName }
-										<input type="file" onChange={ e => this.onSelectFileForUpload(e) } className="show-for-sr" />
+										<input type="file" name="cv" onChange={ e => this.onSelectFileForUpload(e) } className="show-for-sr" />
 									</label>
 								</div>
 								<div className="small-12 text-center cell">
