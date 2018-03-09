@@ -41,8 +41,8 @@ class CarreiraPage extends Component {
 							</div>
 						</div>
 						<h6>Envie seu currículo para <a className="default" href="mailto:jobs@cinnecta.com">jobs@cinnecta.com</a> ou preencha o formulário abaixo:</h6>
-						<form className="contact-form" name="carreira" method="post" data-netlify="true" action="/success" data-netlify-honeypot="bot-field">
-							<input type="hidden" name="bot-field" />
+						<form className="contact-form" name="carreiras" method="post" data-netlify="true" action="/success" data-netlify-honeypot="bot-field">
+							<input type="hidden" name="form-name" value="carreiras" />
 							<div className="grid-x grid-margin-x">
 								<div className="large-8 cell">
 									<div className="grid-x grid-margin-x">
