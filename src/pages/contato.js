@@ -22,10 +22,11 @@ function encode(data) {
 	  }
 	
 	  handleSubmit = e => {
+		console.log(this.state);
 		fetch("/", {
 		  method: "POST",
 		  headers: { "Content-Type": "application/x-www-form-urlencoded" },
-		  body: encode({ "form-name": "contact", ...this.state })
+		  body: encode({ "form-name": "contato", ...this.state })
 		})
 		  .then(() => alert("Sucesso!"))
 		  .catch(error => alert(error));
@@ -44,7 +45,7 @@ function encode(data) {
 					<div className="grid-container">
 						<div className="grid-x grid-margin-x">
 							<div className="large-8 cell">
-								<form className="contact-form" name="contact" method="post" data-netlify="true" action="/success" onSubmit={this.handleSubmit} data-netlify-honeypot="bot-field">
+								<form className="contact-form" name="contato" method="post" data-netlify="true" action="/success" onSubmit={this.handleSubmit} data-netlify-honeypot="bot-field">
 									<input type="hidden" name="bot-field" />
 									<div className="grid-x grid-margin-x">
 										<div className="medium-6 cell">
