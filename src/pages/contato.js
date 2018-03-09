@@ -39,7 +39,7 @@ function encode(data) {
 				<section className="contact-section">
 					<div className="large-12 contact-intro text-center cell">
 						<h2>Vamos tomar um café?</h2>
-						<p>Agende a visita de um consultor e vamos conversar sobre como melhorar o seu negócio:</p>
+						<p>Agende a visita de um consultor e vamos conversar sobre como melhorar o seu negócio</p>
 					</div>
 					<div className="grid-container">
 						<div className="grid-x grid-margin-x">
