@@ -18,19 +18,19 @@ const ContatoPage = () => (
   							<input type="hidden" name="form-name" value="contact" />
 							<div className="grid-x grid-margin-x">
 								<div className="medium-6 cell">
-									<input type="text" placeholder="Nome:" />
+									<input type="text" name="nome" placeholder="Nome:" />
 								</div>
 								<div className="medium-6 cell">
-									<input type="text" placeholder="Empresa:" />
+									<input type="text" name="empresa" placeholder="Empresa:" />
 								</div>
 								<div className="medium-6 cell">
-									<input type="text" placeholder="E-mail:" />
+									<input type="text" name="email" placeholder="E-mail:" />
 								</div>
 								<div className="medium-6 cell">
-									<input type="text" placeholder="Telefone:" />
+									<input type="text" name="telefone" placeholder="Telefone:" />
 								</div>
 								<div className="medium-12 cell">
-									<textarea type="text" placeholder="Mensagem:" />
+									<textarea type="text" name="mensagem" placeholder="Mensagem:" />
 								</div>
 								<div className="medium-12 text-right cell">
 									<button type="submit" className="secondary large button">Enviar</button>
