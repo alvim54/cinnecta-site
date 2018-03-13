@@ -67,8 +67,8 @@ function encode(data) {
 								<h6>Telefone:</h6>
 								+55 31 3245 1937
 								<h6>E-mail:</h6>
-								<a href="mailto:comercial@cinnecta.com">comercial@cinnecta.com</a>
-								<h6>Endereço</h6>
+								<a className="default" href="mailto:comercial@cinnecta.com">comercial@cinnecta.com</a>
+								<h6>Endereço:</h6>
 								Rua Alagoas, 1314 - sl 816 - Belo Horizonte/MG - CEP 30130-160
 							</div>
 						</div> 

@@ -44,36 +44,40 @@ class CarreiraPage extends Component {
 						<form className="contact-form" name="carreiras" method="post" data-netlify="true" action="/success" data-netlify-honeypot="bot-field">
 							<input type="hidden" name="form-name" value="carreiras" />
 							<div className="grid-x grid-margin-x">
-								<div className="large-8 cell">
+								<div className="small-12 cell">
 									<div className="grid-x grid-margin-x">
-										<div className="medium-6 cell">
+										<div className="medium-12 large-4 cell">
 											<input type="text" name="nome" placeholder="Nome:" />
 										</div>
-										<div className="medium-6 cell">
+										<div className="medium-6 large-4 cell">
 											<input type="text" name="email" placeholder="E-mail:" />
 										</div>
-										<div className="medium-12 cell">
+										<div className="medium-6 large-4 cell">
+											<select name="atuacao">
+												<option disabled="disabled" selected="selected">Área de atuação</option>
+												<option>Atendimento ao cliente</option>
+												<option>Desenvolvimento (front-end)</option>
+												<option>Desenvolvimento (back-end)</option>
+												<option>Desenvolvimento (mobile)</option>
+											</select>
+										</div>
+										<div className="medium-8 cell">
 											<input type="text" name="linkedin" placeholder="LinkedIn:" />
+										</div>
+										<div className="medium-4 cell">
+											<input type="tel" name="telefone" placeholder="Telefone:" />
 										</div>
 										<div className="medium-12 cell">
 											<textarea type="text" name="mensagem" placeholder="Mensagem:" />
 										</div>
 									</div>
 								</div>
-								<div className="large-4 contact-info cell">
-									<select name="atuacao">
-										<option disabled="disabled" selected="selected">Área de atuação</option>
-										<option>Atendimento ao cliente</option>
-										<option>Desenvolvimento (front-end)</option>
-										<option>Desenvolvimento (back-end)</option>
-										<option>Desenvolvimento (mobile)</option>
-									</select>
-									<input type="tel" name="telefone" placeholder="Telefone:" />
-									<label className="file button">
-										<i className="icon-paperclip"></i> { this.state.uploadFileName }
-										<input type="file" name="cv" onChange={ e => this.onSelectFileForUpload(e) } className="show-for-sr" />
-									</label>
-								</div>
+								{/*
+								<label className="file button">
+									<i className="icon-paperclip"></i> { this.state.uploadFileName }
+									<input type="file" name="cv" onChange={ e => this.onSelectFileForUpload(e) } className="show-for-sr" />
+								</label>
+								*/}
 								<div className="small-12 text-center cell">
 									<button type="submit" className="secondary large button">Enviar</button>
 								</div>

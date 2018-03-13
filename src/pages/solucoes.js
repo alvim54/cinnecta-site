@@ -3,6 +3,12 @@ import Link from 'gatsby-link';
 import WhitePaperForm from '../components/WhitePaperForm';
 import devicesImage from '../../assets/img/devices.png';
 import placeholderImage from '../../assets/img/illustration-placeholder.png';
+import imageGestaoExperienciaUsuario from '../../assets/img/solutions/gestao_experiencia_usuario.png';
+import imageSocialScoring from '../../assets/img/solutions/social_scoring.png';
+import imageEngajamentoPersonalizado from '../../assets/img/solutions/engajamento_personalizado.png';
+import imagePredicaoChurn from '../../assets/img/solutions/predicao_churn.png';
+import imageGeoFencing from '../../assets/img/solutions/geo_fencing.png';
+import imageDeteccaoFraudes from '../../assets/img/solutions/deteccao_fraudes.png';
 
 const SolucoesPage = () => (
 	<div className="content">
@@ -20,7 +26,7 @@ const SolucoesPage = () => (
 							<p>Com a análise de indicadores de qualidade durante o período de uso do seu aplicativo e análise comparativa com padrões de qualidade de outros apps é possível identificar com precisão se a experiência do seu usuários ao utilizar o seu app é satisfatória ou quais as melhorias devem ser realizadas em sua aplicação para melhorar a experiência do seu usuário.</p>
 						</div>
 						<div className="small-12 medium-8 large-5 text-center cell">
-							<img src={placeholderImage} />
+							<img src={imageGestaoExperienciaUsuario} />
 						</div>
 					</div>
 				</article>
@@ -31,7 +37,7 @@ const SolucoesPage = () => (
 							<p>Analisando os hábitos do seu usuário, assim como perfil de deslocamento e uso de aplicativos específicos, a solução da Cinnecta atribui um Indicador social específico para cada que indica a sua propensão para consumir determinado produto, serviço ou receber determinado tipo de comunicação</p>
 						</div>
 						<div className="small-12 medium-8 large-5 text-center cell">
-							<img src={placeholderImage} />
+							<img src={imageSocialScoring} />
 						</div>
 					</div>
 				</article>
@@ -42,7 +48,7 @@ const SolucoesPage = () => (
 							<p>A solução da Cinnecta permite individualizar a comunicação com os usuários do seu aplicativo, através de uma segmentação personalizada, levando em consideração o perfil de cada usuário. Dessa forma, a solução permite a geração de campanhas personalizadas de engajamento e retenção.</p>
 						</div>
 						<div className="small-12 medium-8 large-5 text-center cell">
-							<img src={placeholderImage} />
+							<img src={imageEngajamentoPersonalizado} />
 						</div>
 					</div>
 				</article>
@@ -54,7 +60,7 @@ const SolucoesPage = () => (
 							<p>A Solução da CINNECTA acompanha em tempo real o comportamento do usuário e é capaz de prever, de forma super assertiva, o início do engajamento de seus usuários com algum concorrente, o que permite a geração de campanhas de retenção direcionadas evitando a perda de clientes e aumentando o engajamento dos usuários com a sua plataforma.</p>
 						</div>
 						<div className="small-12 medium-8 large-5 text-center cell">
-							<img src={placeholderImage} />
+							<img src={imagePredicaoChurn} />
 						</div>
 					</div>
 				</article>
@@ -66,7 +72,7 @@ const SolucoesPage = () => (
 							<p>A solução da CINNECTA analisa em tempo real a geolocalização e o comportamento do usuário e, quando ele está em um local de interesse, disponibiliza esta informação para a geração de campanhas.</p>
 						</div>
 						<div className="small-12 medium-8 large-5 text-center cell">
-							<img src={placeholderImage} />
+							<img src={imageGeoFencing} />
 						</div>
 					</div>
 				</article>
@@ -77,7 +83,7 @@ const SolucoesPage = () => (
 							<p>Conhecendo o perfil do usuário e suas atividades no smartphone em tempo real e geolocalizadas, nosso algoritmo é capaz de identificar acessos suspeitos ao seu app, indicando de forma pró-ativa usuários e eventos suspeitos.</p>
 						</div>
 						<div className="small-12 medium-8 large-5 text-center cell">
-							<img src={placeholderImage} />
+							<img src={imageDeteccaoFraudes} />
 						</div>
 					</div>
 				</article>
