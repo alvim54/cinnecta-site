@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Link from 'gatsby-link';
 
 const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+  <div className="main">
+    <div className="grid-container">
+      <div className="grid-x grid-margin-x">
+        <div className="small-12 text-center cell">
+          <h1>Página não existe</h1>
+          <p>Volte para a <Link to="/">página inicial</Link></p>
+        </div>
+      </div>
+    </div>
   </div>
 )
 
