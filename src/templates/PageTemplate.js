@@ -6,7 +6,6 @@ import '../styles/app.css'
 
 const PageTemplate = ({ children }) => (
   <div>
-    <Header />
     <div
       style={{
         margin: '0 auto',

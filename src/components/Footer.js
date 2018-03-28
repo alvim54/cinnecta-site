@@ -16,7 +16,7 @@ const Footer = () => (
 						Fale com um consultor:<br />
 						<strong className="phone-number">+55 31 3245 1937</strong>
 					</p>
-					<a href="mailto:comercial@cinnecta.com">comercial@cinnecta.com</a>
+					<a href="mailto:cinnecta@cinnecta.com">cinnecta@cinnecta.com</a>
 				</div>
 				<div className="small-12 medium-auto cell">
 					<nav className="footer-nav">

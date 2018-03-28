@@ -1,0 +1,44 @@
+[
+    {
+        "id": "experiencia",
+        "name": "Gestão de experiência do usuário",
+        "image": "gestao_experiencia_usuario.png",
+        "description": "Entenda a percepção do usuário de seu app em relação à qualidade do serviço",
+        "content": "<p>Com a análise de indicadores de qualidade durante o período de uso do seu aplicativo e análise comparativa com padrões de qualidade de outros apps é possível identificar com precisão se a experiência do seu usuários ao utilizar o seu app é satisfatória ou quais as melhorias devem ser realizadas em sua aplicação para melhorar a experiência do seu usuário.</p>"
+    },
+    {
+        "id": "scoring",
+        "name": "Social Scoring",
+        "image": "social_scoring.png",
+        "description": "Faça o ranking de seus usuários de acordo com o comportamento",
+        "content": "<p>Analisando os hábitos do seu usuário, assim como perfil de deslocamento e uso de aplicativos específicos, a solução da Cinnecta atribui um Indicador social específico para cada que indica a sua propensão para consumir determinado produto, serviço ou receber determinado tipo de comunicação</p>"
+    },
+    {
+        "id": "engajamento",
+        "name": "Engajamento Personalizado",
+        "image": "engajamento_personalizado.png",
+        "description": "Conheça o perfil de cada usuário e gere campanhas mais assertivas",
+        "content": "<p>A solução da Cinnecta permite individualizar a comunicação com os usuários do seu aplicativo, através de uma segmentação personalizada, levando em consideração o perfil de cada usuário. Dessa forma, a solução permite a geração de campanhas personalizadas de engajamento e retenção.</p>"
+    },
+    {
+        "id": "churn",
+        "name": "Predição de Churn / Retenção",
+        "image": "predicao_churn.png",
+        "description": "Conheça os usuários com maior propensão a se engajar com seus concorrentes",
+        "content": "<p>A tomada de decisão de um cliente para deixar de consumir um serviço para iniciar um engajamento com o concorrente é previsível e pode ser identificada com antecedência quando avaliamos as variações no perfil a cada dia.</p><p>A Solução da CINNECTA acompanha em tempo real o comportamento do usuário e é capaz de prever, de forma super assertiva, o início do engajamento de seus usuários com algum concorrente, o que permite a geração de campanhas de retenção direcionadas evitando a perda de clientes e aumentando o engajamento dos usuários com a sua plataforma.</p>"
+    },
+    {
+        "id": "fencing",
+        "name": "Geofencing",
+        "image": "geo_fencing.png",
+        "description": "Gere comunicação com seus usuários na hora certa e no lugar certo",
+        "content": "<p>No momento Certo! No Lugar Certo! Gere a comunicação com os usuários do seu aplicativo considerando o perfil individual de cada, o contexto e a geolocalização em tempo real e não perca nenhuma oportunidade de negócio.</p><p>A solução da CINNECTA analisa em tempo real a geolocalização e o comportamento do usuário e, quando ele está em um local de interesse, disponibiliza esta informação para a geração de campanhas.</p>"
+    },
+    {
+        "id": "fraudes",
+        "name": "Detecção e prevenção de fraudes",
+        "image": "deteccao_fraudes.png",
+        "description": "Receba alarmes em tempo real a cada acesso considerado suspeito",
+        "content": "<p>Conhecendo o perfil do usuário e suas atividades no smartphone em tempo real e geolocalizadas, nosso algoritmo é capaz de identificar acessos suspeitos ao seu app, indicando de forma pró-ativa usuários e eventos suspeitos.</p>"
+    }
+]

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import MaskedInput from 'react-text-mask';
+import { phoneMask } from '../components/utils/phoneMask';
 
 class CarreiraPage extends Component {
 	constructor() {
@@ -14,8 +16,6 @@ class CarreiraPage extends Component {
 			this.setState({ uploadFileName })
 		}
 	}
-
-	
 
 	render() {
 		return (
@@ -47,28 +47,29 @@ class CarreiraPage extends Component {
 								<div className="small-12 cell">
 									<div className="grid-x grid-margin-x">
 										<div className="medium-12 large-4 cell">
-											<input type="text" name="nome" placeholder="Nome:" />
+											<input type="text" name="nome" placeholder="Nome:" required />
 										</div>
 										<div className="medium-6 large-4 cell">
-											<input type="text" name="email" placeholder="E-mail:" />
+											<input type="text" name="email" placeholder="E-mail:" required />
 										</div>
 										<div className="medium-6 large-4 cell">
-											<select name="atuacao">
-												<option disabled="disabled" selected="selected">Área de atuação</option>
-												<option>Atendimento ao cliente</option>
-												<option>Desenvolvimento (front-end)</option>
-												<option>Desenvolvimento (back-end)</option>
-												<option>Desenvolvimento (mobile)</option>
-											</select>
+											<input type="text" name="atuacao" placeholder="Área de atuação:" required />
 										</div>
 										<div className="medium-8 cell">
-											<input type="text" name="linkedin" placeholder="LinkedIn:" />
+											<input type="text" name="linkedin" placeholder="LinkedIn:" required />
 										</div>
 										<div className="medium-4 cell">
-											<input type="tel" name="telefone" placeholder="Telefone:" />
+											<MaskedInput
+												type="tel"
+												name="telefone"
+												mask={input => phoneMask(input)}
+												placeholder="Telefone:"
+												guide={false}
+												required
+											/>
 										</div>
 										<div className="medium-12 cell">
-											<textarea type="text" name="mensagem" placeholder="Mensagem:" />
+											<textarea type="text" name="mensagem" placeholder="Mensagem:" required />
 										</div>
 									</div>
 								</div>

@@ -6,7 +6,7 @@ const SuccessPage = () => (
         <section className="call-to-action-bar">
 			<div className="text-center grid-container">
 				<h4>Seu formulário foi enviado com sucesso!</h4>
-				<Link to="/contato" className="light button">Voltar</Link>
+				<Link to="/" className="light button">Voltar</Link>
 			</div>
 		</section>
     </div>

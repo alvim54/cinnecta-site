@@ -210,7 +210,7 @@ header {
             }
 
             ul {
-                display: flex;
+                display: none;
                 visibility: hidden;
                 opacity: 0;
                 flex-direction: column;
@@ -336,6 +336,10 @@ header {
 
         & > ul {
             li {
+                ul {
+                    display: flex;
+                }
+                
                 &:hover ul {
                     visibility: visible;
                     opacity: 1;
