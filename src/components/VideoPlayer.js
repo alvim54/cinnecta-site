@@ -1,5 +1,6 @@
 import React from 'react';
 import videojs from 'video.js';
+import 'videojs-font/css/videojs-icons.css';
 import 'video.js/dist/video-js.min.css';
 
 export default class VideoPlayer extends React.Component {

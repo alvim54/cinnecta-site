@@ -18,7 +18,8 @@
     "react-helmet": "^5.2.0",
     "react-text-mask": "^5.1.0",
     "swiper": "^4.1.6",
-    "video.js": "^6.6.3"
+    "video.js": "^6.6.3",
+    "videojs-font": "^2.1.0"
   },
   "keywords": [
     "gatsby"

@@ -1094,11 +1094,12 @@ footer {
         &:focus {
             background-color: rgba($medium-gray, .2) !important;
         }
+        
+        .vjs-icon-placeholder {
+            display: none !important;
+        }
     }
 
-    .vjs-icon-placeholder {
-        display: none !important;
-    }
     
     &:hover {
         .vjs-big-play-button {

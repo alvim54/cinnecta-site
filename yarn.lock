@@ -9062,7 +9062,7 @@ video.js@^6.6.3:
     videojs-vtt.js "0.12.4"
     xhr "2.4.0"
 
-videojs-font@2.1.0:
+videojs-font@2.1.0, videojs-font@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/videojs-font/-/videojs-font-2.1.0.tgz#a25930a67f6c9cfbf2bb88dacb8c6b451f093379"
 
