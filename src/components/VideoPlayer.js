@@ -4,15 +4,18 @@ import 'videojs-font/css/videojs-icons.css';
 import 'video.js/dist/video-js.min.css';
 
 export default class VideoPlayer extends React.Component {
+
   componentDidMount() {
-    this.player = videojs(this.videoNode, this.props, function onPlayerReady() {
+    this.player = videojs(this.videoNode, this.props, () => {
       console.log('onPlayerReady', this)
+      this.props.onRef(this.player)
     });
   }
-
+  
   componentWillUnmount() {
     if (this.player) {
       this.player.dispose()
+      this.props.onRef(undefined)
     }
   }
 

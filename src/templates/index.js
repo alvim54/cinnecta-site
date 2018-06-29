@@ -5,14 +5,21 @@ import Swiper from '../components/Swiper';
 import WhitePaperForm from '../components/WhitePaperForm';
 import testimonialBackground from '../../assets/img/testimonials/01.jpg';
 import video from '../../assets/videos/intro.mp4';
+import englishVideo from '../../assets/videos/intro.mp4';
 
 const videoJsOptions = {
   controls: true,
   fluid: true,
-  sources: [{
-    src: video,
-    type: 'video/mp4'
-  }]
+  sources: [
+    {
+      src: video,
+      type: 'video/mp4'
+    },
+    {
+      src: englishVideo,
+      type: 'video/mp4'
+    },
+  ]
 }
 
 const swiperOptions = {

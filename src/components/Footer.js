@@ -1,6 +1,9 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Logo from '../../assets/img/logo.png';
+import wayraLogo from '../../assets/img/partners/wayra.png';
+import telefonicaLogo from '../../assets/img/partners/telefonica.png';
+import endeavorLogo from '../../assets/img/partners/endeavor.png';
 
 const Footer = () => (
 	<footer>
@@ -43,6 +46,11 @@ const Footer = () => (
 						</ul>
 					</nav>
 				</div>
+			</div>
+			<div className="partners grid-x grid-padding-x">
+				<div className="cell small-12 medium-auto"><img src={ endeavorLogo } /></div>
+				<div className="cell small-12 medium-auto"><img src={ wayraLogo } /></div>
+				<div className="cell small-12 medium-auto"><img src={ telefonicaLogo } /></div>
 			</div>
 		</div>
 	</footer>
