@@ -79,7 +79,7 @@ function encode(data) {
 								<h6>E-mail:</h6>
 								<a className="default" href="mailto:cinnecta@cinnecta.com">cinnecta@cinnecta.com</a>
 								<h6>Endereço:</h6>
-								Rua Alagoas, 1314 - sl 816 - Belo Horizonte/MG - CEP 30130-160
+								Av. Getúlio Vargas, 15 - Belo Horizonte/MG - CEP 30112-020
 							</div>
 						</div> 
 				</div>
