@@ -13,7 +13,7 @@ const Footer = () => (
 					<img src={Logo} />
 					<p>
 						® Cinnecta do Brasil Ltda.<br />
-						Rua Alagoas, 1314 - sl 816 - Belo Horizonte/MG
+						Av. Getúlio Vargas, 15 - Belo Horizonte/MG
 					</p>
 					<p>
 						Fale com um consultor:<br />
