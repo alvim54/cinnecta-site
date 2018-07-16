@@ -75,7 +75,7 @@ function encode(data) {
 							</div>
 							<div className="large-4 contact-info cell">
 								<h6>Telefone:</h6>
-								+55 31 3245 1937
+								+55 31 3267 1244
 								<h6>E-mail:</h6>
 								<a className="default" href="mailto:cinnecta@cinnecta.com">cinnecta@cinnecta.com</a>
 								<h6>Endereço:</h6>

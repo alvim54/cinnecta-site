@@ -12,12 +12,12 @@ const Footer = () => (
 				<div className="small-12 medium-4 large-6 cell">
 					<img src={Logo} />
 					<p>
-						® Cinnecta do Brasil Ltda.<br />
+						® Cinnecta do Brasil Soluções em Tecnologia S/A<br />
 						Av. Getúlio Vargas, 15 - Belo Horizonte/MG
 					</p>
 					<p>
 						Fale com um consultor:<br />
-						<strong className="phone-number">+55 31 3245 1937</strong>
+						<strong className="phone-number">+55 31 3267 1244</strong>
 					</p>
 					<a href="mailto:cinnecta@cinnecta.com">cinnecta@cinnecta.com</a>
 				</div>
