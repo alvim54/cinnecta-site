@@ -38,10 +38,7 @@ class Html extends Component {
 
           <meta name="referrer" content="origin" />
           <meta charSet="utf-8" />
-          <meta
-            name="description"
-            content="Site da Cinnecta do Brasil"
-          />
+          <meta name="description" content="A Cinnecta é uma empresa de tecnologia especializada em Gerenciamento de Comportamento do Usuário para canais digitais móveis. Fornecemos soluções inovadoras que permitem às empresas ter visibilidade sobre o Perfil de Uso e Experiência do seus clientes por meio do monitoramento do uso de smartphones, proporcionando o aumento do Engajamento e da Retenção." />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
           <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
