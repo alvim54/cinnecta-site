@@ -42,7 +42,7 @@ function encode(data) {
 						<div className="grid-x grid-margin-x">
 							<div className="large-8 cell">
 								<form className="contact-form" name="contato" method="post" data-netlify="true" action="/success" onSubmit={this.handleSubmit} data-netlify-honeypot="bot-field">
-									<input type="hidden" name="bot-field" />
+									<input type="text" name="cpf" style={{display: 'none'}} />
 									<div className="grid-x grid-margin-x">
 										<div className="medium-6 cell">
 											<input type="text" name="nome" placeholder="Nome:" onChange={this.handleChange} required />
@@ -67,6 +67,7 @@ function encode(data) {
 										<div className="medium-12 cell">
 											<textarea type="text" name="mensagem" placeholder="Mensagem:" onChange={this.handleChange} required />
 										</div>
+										<div data-netlify-recaptcha />
 										<div className="medium-12 text-right cell">
 											<button type="submit" className="secondary large button">Enviar</button>
 										</div>
