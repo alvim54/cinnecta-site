@@ -23,19 +23,19 @@ class ContatoPage extends Component{
 	
 	handleRecaptcha = value => {
 		console.log(value)
-		this.setState({ "g-recaptcha-response": value });
-	};
-
-	handleSubmit = e => {
+		//this.setState({ "g-recaptcha-response": value });
 		fetch("/", {
 			method: "POST",
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
-			body: encode({ "form-name": "contato", ...this.state })
+			body: encode({ "form-name": "contato", ...this.state, "g-recaptcha-response": value })
 		})
 			.then(response => {alert("Sucesso!"), console.log(response)})
 			.catch(error => alert(error));
+	};
 
+	handleSubmit(e) {
 		e.preventDefault();
+		this.captcha.execute();
 	};
 
 	render() {
@@ -49,7 +49,7 @@ class ContatoPage extends Component{
 					<div className="grid-container">
 						<div className="grid-x grid-margin-x">
 							<div className="large-8 cell"> 
-								<form className="contact-form" name="contato" method="post" data-netlify="true" action="/success" onSubmit={this.handleSubmit} data-netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+								<form className="contact-form" name="contato" method="post" data-netlify="true" action="/success" onSubmit={e => this.handleSubmit(e)} data-netlify-honeypot="bot-field" data-netlify-recaptcha="true">
 									<input type="text" name="cpf" style={{display: 'none'}} />
 									<div className="grid-x grid-margin-x">
 										<div className="medium-6 cell">
@@ -76,7 +76,7 @@ class ContatoPage extends Component{
 											<textarea type="text" name="mensagem" placeholder="Mensagem:" onChange={this.handleChange} required />
 										</div>
 										<Recaptcha
-											ref="recaptcha"
+											ref={ref => this.captcha = ref}
 											size="invisible"
 											sitekey={RECAPTCHA_KEY}
 											onChange={this.handleRecaptcha}
