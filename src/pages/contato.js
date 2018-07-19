@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import MaskedInput from 'react-text-mask';
 import { phoneMask } from '../components/utils/phoneMask';
+import Recaptcha from "react-google-recaptcha";
+
+const RECAPTCHA_KEY = '6Lfh_2QUAAAAACEEzr946riwylwNyMvn7GYR3YTB';
 
 function encode(data) {
 	return Object.keys(data)
@@ -8,27 +11,31 @@ function encode(data) {
 		.join("&");
 }
 
-  class ContatoPage extends Component{
-	  constructor(props) {
+class ContatoPage extends Component{
+		constructor(props) {
 		super(props);
 		this.state = {};
-	  }
-	
-	  handleChange = (e) => {
+	}
+
+	handleChange = (e) => {
 		this.setState({[e.target.name]: e.target.value});
-	  }
+	}
 	
-	  handleSubmit = e => {
+	handleRecaptcha = value => {
+		this.setState({ "g-recaptcha-response": value });
+	};
+
+	handleSubmit = e => {
 		fetch("/", {
-		  method: "POST",
-		  headers: { "Content-Type": "application/x-www-form-urlencoded" },
-		  body: encode({ "form-name": "contato", ...this.state })
+			method: "POST",
+			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			body: encode({ "form-name": "contato", ...this.state })
 		})
-		  .then(() => alert("Sucesso!"))
-		  .catch(error => alert(error));
-	
+			.then(() => alert("Sucesso!"))
+			.catch(error => alert(error));
+
 		e.preventDefault();
-	  };
+	};
 
 	render() {
 		return (
@@ -41,7 +48,7 @@ function encode(data) {
 					<div className="grid-container">
 						<div className="grid-x grid-margin-x">
 							<div className="large-8 cell"> 
-								<form className="contact-form" name="contato" method="post" data-netlify="true" action="/success" onSubmit={this.handleSubmit} data-netlify-honeypot="bot-field" data-netlify-recaptcha>
+								<form className="contact-form" name="contato" method="post" data-netlify="true" action="/success" onSubmit={this.handleSubmit} data-netlify-honeypot="bot-field" data-netlify-recaptcha="true">
 									<input type="text" name="cpf" style={{display: 'none'}} />
 									<div className="grid-x grid-margin-x">
 										<div className="medium-6 cell">
@@ -67,7 +74,12 @@ function encode(data) {
 										<div className="medium-12 cell">
 											<textarea type="text" name="mensagem" placeholder="Mensagem:" onChange={this.handleChange} required />
 										</div>
-										<div data-netlify-recaptcha />
+										<Recaptcha
+											ref="recaptcha"
+											size="invisible"
+											sitekey={RECAPTCHA_KEY}
+											onChange={this.handleRecaptcha}
+										/>
 										<div className="medium-12 text-right cell">
 											<button type="submit" className="secondary large button">Enviar</button>
 										</div>
