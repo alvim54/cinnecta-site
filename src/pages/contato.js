@@ -40,7 +40,7 @@ function encode(data) {
 					</div>
 					<div className="grid-container">
 						<div className="grid-x grid-margin-x">
-							<div className="large-8 cell">
+							<div className="large-8 cell"> 
 								<form className="contact-form" name="contato" method="post" data-netlify="true" action="/success" onSubmit={this.handleSubmit} data-netlify-honeypot="bot-field" data-netlify-recaptcha>
 									<input type="text" name="cpf" style={{display: 'none'}} />
 									<div className="grid-x grid-margin-x">
