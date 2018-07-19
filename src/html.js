@@ -51,7 +51,7 @@ class Html extends Component {
             content="width=device-width, initial-scale=1.0"
           />
           <meta property="og:title" content="Cinnecta" />
-          <meta property="og:image" content={favicon96} />
+          <meta property="og:image" content="https://raw.githubusercontent.com/alvim54/cinnecta-site/master/assets/img/sn-image.jpg" />
           <meta property="og:type" content="company" />
           <meta property="og:description" content="A Cinnecta é uma empresa de tecnologia especializada em Gerenciamento de Comportamento do Usuário para canais digitais móveis. Fornecemos soluções inovadoras que permitem às empresas ter visibilidade sobre o Perfil de Uso e Experiência do seus clientes por meio do monitoramento do uso de smartphones, proporcionando o aumento do Engajamento e da Retenção." />
           <title>Cinnecta</title>
