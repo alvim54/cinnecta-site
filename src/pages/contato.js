@@ -22,6 +22,7 @@ class ContatoPage extends Component{
 	}
 	
 	handleRecaptcha = value => {
+		console.log(value)
 		this.setState({ "g-recaptcha-response": value });
 	};
 
@@ -31,7 +32,7 @@ class ContatoPage extends Component{
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
 			body: encode({ "form-name": "contato", ...this.state })
 		})
-			.then(() => alert("Sucesso!"))
+			.then(response => {alert("Sucesso!"), console.log(response)})
 			.catch(error => alert(error));
 
 		e.preventDefault();
