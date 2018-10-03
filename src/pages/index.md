@@ -9,7 +9,7 @@ banner:
     callToAction: Conheça nossas soluções
 
 featured:
-    heading: Entenda o <strong>comportamento do seu cliente</strong> e aumente o engajamento nos canais digitais móveis
+    heading: Entenda o comportamento do seu cliente e aumente o engajamento nos canais digitais móveis
     callToAction: Solicite o contato de um consultor
     reactive:
         heading: 'PROCESSOS REATIVOS de análise de comportamento do usuário:'
