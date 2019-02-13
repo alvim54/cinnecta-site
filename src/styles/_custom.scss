@@ -125,9 +125,13 @@ select {
 
 
 header {
-    border-bottom: solid 1px $light-gray;
     padding: 1rem;
     min-height: 4.25rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
 
     .grid-x {
         height: 100%;
@@ -1152,4 +1156,71 @@ footer {
         transform: translate(0, -50%) !important;
         display: none;
     }
+}
+
+
+//LANDING PAGE
+.landing-page {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(#001166,.8) 0%,rgba(#001166,.8) 100%), url('../../assets/img/landing-page/hero-pattern.png'), url('../../assets/img/landing-page/hero-bg.jpg') center top no-repeat;
+    background-size: auto, auto, cover;
+
+    .main-banner {
+        padding-bottom: 0;
+        padding-top: 0;
+
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+}
+.landing-page__grid {
+    min-height: 100vh;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.landing-page__title {
+    color: $white;
+    line-height: 1.1;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+.landing-page__text {
+    color: $light-gray !important;
+    line-height: 1.2 !important;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+.landing-page__button {
+    border-radius: 0 .25rem .25rem 0;
+    height: 3.625rem;
+    min-height: unset;
+    font-weight: bold;
+}
+.landing-page__input {
+    border-radius: .25rem 0 0 .25rem;
+    height: 3.625rem !important;
+}
+.landing-page__video-container {
+    margin-bottom: 2rem;
+}
+.landing-page__icon-container {
+    margin-bottom: 3rem;
+    text-align: left;
+
+    a {
+        margin-right: .25rem;
+    }
+}
+.logo{
+    padding: 0 1rem;
+    img {
+        width: 8.5rem
+    }
+}
+
+header {
+    padding: 2rem 0;
 }
