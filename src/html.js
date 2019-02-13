@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import * as PropTypes from "prop-types"
 import favicon16 from '../assets/img/favicon-16x16.png';
 import favicon32 from '../assets/img/favicon-32x32.png';
-import favicon96 from '../assets/img/favicon-96x96.png';
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
@@ -42,11 +41,11 @@ class Html extends Component {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
           <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
-          <link rel="icon" type="image/png" sizes="96x96" href={favicon96} />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <link rel="manifest" href="/manifest.json" />
           <meta property="og:title" content="Cinnecta" />
           <meta property="og:image" content="https://image.ibb.co/hEb18d/sn_image.jpg" />
           <meta property="og:type" content="company" />
