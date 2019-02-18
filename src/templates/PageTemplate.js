@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Header from '../components/Header'
+import Header from '../components/Header_old'
 import '../styles/app.css'
 
 const PageTemplate = ({ children }) => (

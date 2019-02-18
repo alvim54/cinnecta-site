@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'proxima-nova';
+    src: url('ProximaNovaAltBlack-webfont.ttf') format("truetype");
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima-nova';
+    src: url('ProximaNovaAltBold-webfont.ttf') format("truetype");
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima-nova';
+    src: url('ProximaNovaAltRegular-webfont.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
+}
